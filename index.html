@@ -1,1 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10243a">
+  <title>Maître Houssam ED-Daky | Avocat à Meknès</title>
 
+  <style>
+    :root {
+      --navy: #10243a;
+      --blue: #245b9b;
+      --gold: #c9a65b;
+      --cream: #f7f5f0;
+      --text: #243244;
+      --muted: #6d7784;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 28px 15px;
+      background: linear-gradient(180deg, #e9edf2, #f7f5f0);
+      font-family: Arial, "Noto Sans Arabic", sans-serif;
+      color: var(--text);
+    }
+
+    .profile {
+      max-width: 460px;
+      margin: auto;
+      background: #fff;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 15px 45px rgba(16, 36, 58, 0.14);
+    }
+
+    .hero {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 30px 22px 26px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 12%;
+      right: 12%;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .logo {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      background: white;
+      border-radius: 50%;
+      padding: 5px;
+      border: 2px solid var(--gold);
+      margin-bottom: 15px;
+    }
+
+    .portrait {
+      width: 132px;
+      height: 132px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      border: 4px solid var(--gold);
+      box-shadow: 0 5px 20px rgba(0,0,0,.25);
+      display: block;
+      margin: 0 auto 17px;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin: 8px 0;
+      font-weight: 700;
+    }
+
+    .arabic-name {
+      direction: rtl;
+      font-size: 22px;
+      margin: 8px 0;
+      color: #f3dfad;
+    }
+
+    .title {
+      font-size: 15px;
+      letter-spacing: .4px;
+      margin: 8px 0;
+    }
+
+    .barreau {
+      color: #e2c781;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .content {
+      padding: 24px 22px;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: 17px;
+      margin: 0 0 12px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid #e9e3d6;
+    }
+
+    .bio {
+      direction: rtl;
+      text-align: right;
+      font-size: 14px;
+      line-height: 2;
+      color: #3d4652;
+      margin-bottom: 22px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 49px;
+      padding: 12px 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid #e1e5ea;
+      color: var(--navy);
+      background: #f8fafc;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(16,36,58,.10);
+    }
+
+    .btn.primary {
+      background: var(--navy);
+      color: white;
+      border-color: var(--navy);
+    }
+
+    .btn.gold {
+      background: #f8f1df;
+      color: #76591e;
+      border-color: #e6d4a5;
+    }
+
+    .btn.whatsapp {
+      background: #eaf8ef;
+      color: #176b3a;
+      border-color: #c5e9d1;
+    }
+
+    .btn.full {
+      grid-column: 1 / -1;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f7f8fa;
+      border-radius: 13px;
+      font-size: 13px;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-info div {
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #f1f3f6;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 360px) {
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .btn.full {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="profile">
+
+    <header class="hero">
+      <img class="logo" src="logo.jpeg.png" alt="Logo du cabinet">
+
+      <img class="portrait" src="portrait.jpeg.png"
+           alt="Maître Houssam ED-Daky">
+
+      <h1>Maître Houssam ED-Daky</h1>
+      <div class="arabic-name">الأستاذ حسام الداكي</div>
+      <div class="title">Avocat</div>
+      <div class="barreau">Au Barreau de Meknès</div>
+    </header>
+
+    <section class="content">
+
+      <h2 class="section-title">Présentation professionnelle</h2>
+
+      <div class="bio">
+        محامٍ ممارس بهيئة المحامين بمكناس، يتمتع بخبرة مهنية متعددة
+        المجالات في التمثيل القانوني والقضائي، والاستشارة القانونية،
+        ومواكبة المقاولات والاستثمارات الأجنبية، وتسوية النزاعات ذات
+        الطابع الوطني والدولي. راكم تجربة عملية في ملفات حماية الفئات
+        الهشة، ولا سيما النساء والفتيات والقاصرين، وفي القضايا المرتبطة
+        بالهجرة والاتجار بالبشر والجريمة المنظمة، فضلاً عن منازعات الأعمال
+        والجرائم المالية والجرائم الإلكترونية ذات الامتداد الدولي.
+
+        تقوم ممارسته المهنية على مقاربة قانونية تجمع بين الدفاع عن الحقوق
+        والمصالح المشروعة، واحترام ضمانات المحاكمة العادلة، وتعزيز الولوج
+        إلى العدالة، وتقديم المواكبة القانونية الملائمة للأفراد والمؤسسات
+        والمقاولات الوطنية والدولية، في إطار احترام القانون والالتزامات المهنية.
+      </div>
+
+      <h2 class="section-title">Contact & Services</h2>
+
+      <div class="buttons">
+
+        <a class="btn primary" href="tel:+212662649697">
+          ☎ Appeler
+        </a>
+
+        <a class="btn whatsapp"
+           href="https://wa.me/212613498521"
+           target="_blank">
+          WhatsApp
+        </a>
+
+        <a class="btn gold full"
+           href="https://maps.app.goo.gl/TVmGBoyNB2NkteZ19"
+           target="_blank">
+          📍 Localisation du cabinet
+        </a>
+
+        <a class="btn full"
+           href="mailto:Houssameddaky@gmail.com">
+          ✉ Envoyer un e-mail
+        </a>
+
+        <a class="btn full"
+           href="https://maps.app.goo.gl/TVmGBoyNB2NkteZ19"
+           target="_blank">
+          ⭐ Avis Google — lien à confirmer
+        </a>
+
+        <button class="btn primary full" onclick="saveContact()">
+          ＋ Enregistrer le contact
+        </button>
+
+      </div>
+
+      <div class="contact-info">
+        <div><strong>Téléphone :</strong>
+          <a href="tel:+212662649697">+212 6 62 64 96 97</a>
+        </div>
+
+        <div><strong>Fixe :</strong>
+          <a href="tel:+212532723374">+212 5 32 72 33 74</a>
+        </div>
+
+        <div><strong>WhatsApp :</strong>
+          <a href="https://wa.me/212613498521">+212 6 13 49 85 21</a>
+        </div>
+
+        <div><strong>Email :</strong>
+          <a href="mailto:Houssameddaky@gmail.com">
+            Houssameddaky@gmail.com
+          </a>
+        </div>
+
+        <div><strong>Adresse :</strong><br>
+          3ème étage, Bureau N°6 VN, Résidence D,<br>
+          Avenue des F.A.R., Rue Doukkala,<br>
+          Meknès 50000, Maroc
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      Maître Houssam ED-Daky · Avocat au Barreau de Meknès
+    </footer>
+
+  </main>
+
+  <script>
+    function saveContact() {
+      const vcard = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "FN:Maître Houssam ED-Daky",
+        "N:ED-Daky;Houssam;;;Maître",
+        "ORG:Cabinet d'avocat",
+        "TITLE:Avocat au Barreau de Meknès",
+        "TEL;TYPE=WORK,VOICE:+212532723374",
+        "TEL;TYPE=CELL,VOICE:+212662649697",
+        "TEL;TYPE=CELL,WHATSAPP:+212613498521",
+        "EMAIL:Houssameddaky@gmail.com",
+        "ADR;TYPE=WORK:;;3ème étage, Bureau N°6 VN, Résidence D, Avenue des F.A.R., Rue Doukkala;Meknès;;50000;Maroc",
+        "URL:https://maps.app.goo.gl/TVmGBoyNB2NkteZ19",
+        "END:VCARD"
+      ].join("\r\n");
+
+      const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "Maitre-Houssam-ED-Daky.vcf";
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+
+</body>
+</html>
